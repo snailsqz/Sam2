@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Noto+Sans+JP:wght@200&family=Noto+Sans+Thai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Kalam&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", sans-serif;
+  transition: all 0.4s;
+}
+body {
+  height: 100vh;
+  background-color: #7c81ad;
+}
+header {
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4b527e;
+  border-radius: 20px;
+  border: 3px solid #ffad84;
+}
+header a {
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+}
+
+header a:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.mainbox {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+}
+.mainbox div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 10px solid #f5e8c7;
+  margin-bottom: 20px;
+}
+
+img:hover {
+  scale: 1.05;
+}
+
+.mainbox div:nth-of-type(1) {
+  padding-left: 70px;
+}
+.mainbox div:nth-of-type(2) {
+  align-items: center;
+}
+.mainbox h1:nth-of-type(1) {
+  font-size: 100px;
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+}
+.mainbox h1:nth-of-type(2) {
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+}
+.mainbox h1:nth-of-type(3) {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px #fe574f;
+  font-family: "Afacad", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.mainbox span {
+  text-decoration: 1px underline red;
+  text-underline-offset: 8px;
+}
+
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
